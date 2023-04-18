@@ -17,7 +17,7 @@ public class Cars {
     }
 
     public String getScore(int index) {
-        return cars.get(index).getScore();
+        return cars.get(index).calculateScore();
     }
 
     public void move(int index) {
@@ -35,7 +35,7 @@ public class Cars {
             this.position++;
         }
 
-        public String getScore() {
+        public String calculateScore() {
             return "-".repeat(position);
         }
     }
